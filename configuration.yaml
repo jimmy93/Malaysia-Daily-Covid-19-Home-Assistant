@@ -1,7 +1,6 @@
 sensor:
   - platform: command_line
     name: Covid Malaysia
-    unit_of_measurement: people
     scan_interval: 7200 # Every two hours. This seems reasonable. rather than restart ur HA at the certain time
     value_template: '{{ value_json.date }}'
     command: "python covid.py" #running the pyhton script.
@@ -41,3 +40,6 @@ sensor:
         covid_support:
             friendly_name: 'Bantuan Pernafasan'
             value_template: '{{states.sensor.covid_malaysia.attributes["support"]}}'
+        covid_tarikh:
+            friendly_name: 'Tarikh'
+            value_template: '{{states.sensor.covid_malaysia.attributes["date"]}}'
