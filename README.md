@@ -26,3 +26,8 @@ Just found this great repo who commit daily data for Malaysia as CSV.
 
 ## Thanks
 Thanks to @wnarifin
+FB: Ajimm Al
+my fav community
+Home Assistant Malaysia https://www.facebook.com/groups/homeassistantmalaysia
+Kelab DIY Smart Home https://www.facebook.com/groups/694589921358327
+Telegram Group: Smart Home Malaysia https://t.me/smart_home_malaysia
