@@ -1,0 +1,43 @@
+sensors:
+  - platform: command_line
+    name: Covid Malaysia
+    unit_of_measurement: people
+    scan_interval: 7200 # Every two hours. This seems reasonable. rather than restart ur HA at the certain time
+    value_template: '{{ value_json.date }}'
+    command: "python covid.py" #running the pyhton script.
+    json_attributes:
+      - date
+      - new_cases
+      - new_deaths
+      - total_cases
+      - total_deaths
+      - recover
+      - total_recover
+      - icu
+      - support
+  - platform: template
+    sensors:
+        covid_kes_baharu:
+            friendly_name: 'Kes Baharu'
+            value_template: '{{states.sensor.covid_malaysia.attributes["new_cases"]}}'
+        covid_kes_mati:
+            friendly_name: 'Kes Kematian'
+            value_template: '{{states.sensor.covid_malaysia.attributes["new_deaths"]}}'
+        covid_jumlah_kes:
+            friendly_name: 'Jumlah Kes'
+            value_template: '{{states.sensor.covid_malaysia.attributes["total_cases"]}}'
+        covid_jumlah_kes_mati:
+            friendly_name: 'Jumlah Kes Kematian'
+            value_template: '{{states.sensor.covid_malaysia.attributes["total_deaths"]}}'
+        covid_kes_sembuh:
+            friendly_name: 'Kes Sembuh'
+            value_template: '{{states.sensor.covid_malaysia.attributes["recover"]}}'
+        covid_jumlah_kes_sembuh:
+            friendly_name: 'Jumlah Kes Sembuh'
+            value_template: '{{states.sensor.covid_malaysia.attributes["total_recover"]}}'
+        covid_icu:
+            friendly_name: 'ICU'
+            value_template: '{{states.sensor.covid_malaysia.attributes["icu"]}}'
+        covid_support:
+            friendly_name: 'Bantuan Pernafasan'
+            value_template: '{{states.sensor.covid_malaysia.attributes["support"]}}'
