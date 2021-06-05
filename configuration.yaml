@@ -1,4 +1,4 @@
-sensors:
+sensor:
   - platform: command_line
     name: Covid Malaysia
     unit_of_measurement: people
