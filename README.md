@@ -15,3 +15,4 @@ Just found this great repo who commit daily data for Malaysia as CSV.
 2.  copy code from configuration.yaml to our HA.
 
 ## Thanks
+Thanks to @wnarifin
