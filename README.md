@@ -1,5 +1,5 @@
 # Home Assistant Covid 19 Malaysia
-Home Assistant - Covid-19 Malaysia daily sensor based on csv from repo https://github.com/wnarifin/covid-19-malaysia
+Home Assistant - Covid-19 Malaysia daily sensor based on csv from this great [repo](https://github.com/wnarifin/covid-19-malaysia)
 
 ## Intro
 Default Covid-19 data for Home Assistant can get from this https://www.home-assistant.io/integrations/coronavirus
@@ -24,10 +24,14 @@ Just found this great repo who commit daily data for Malaysia as CSV.
 7.  covid_icu
 8.  covid_support
 
+### Additional Option
+1.  You may vary your sensor accordingly such as to add `unit_of_measurement` or anything else.
+2.  Check out csv data by state from source [repo](https://github.com/wnarifin/covid-19-malaysia).
+
 ## Thanks
-#### Thanks to @wnarifin
-#### FB: A Jimm Al
-#### my fav community
-#### Home Assistant Malaysia https://www.facebook.com/groups/homeassistantmalaysia
-#### Kelab DIY Smart Home https://www.facebook.com/groups/694589921358327
-#### Telegram Group: Smart Home Malaysia https://t.me/smart_home_malaysia
+##### Thanks to @wnarifin
+##### FB: A Jimm Al
+##### my fav community
+##### Home Assistant Malaysia https://www.facebook.com/groups/homeassistantmalaysia
+##### Kelab DIY Smart Home https://www.facebook.com/groups/694589921358327
+##### Telegram Group: Smart Home Malaysia https://t.me/smart_home_malaysia
