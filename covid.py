@@ -8,4 +8,4 @@ reader = csv.DictReader(decoded_content.splitlines(), delimiter = ',')
 list_from_csv = []  #make a list
 for row in reader:
     list_from_csv.append(row)
-print(json.dumps(list_from_csv[-1]))  #print json format for the last row -1
+print(json.dumps(list_from_csv[-1]))  #print json format for the last row -1, Facebook: Ajimm Al
